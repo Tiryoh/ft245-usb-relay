@@ -1,15 +1,33 @@
 # ft245-usb-relay
+
 Command line tool for controlling FTDI FT245 based USB relay module.
 It works with the following devices:
 * Quimat 5V USB 4 Relay Module
 * ... Please let me know if you use this library with other devices!
 
+## Quick Start
+
+Run the following to install this CLI tool.
+```sh
+./install.sh
+```
+
 ## Requirements
+
 Install the following packages: 
 * libftdi1
 * libftdi1-dev
 
 ## Compile
+
+Run the following to build this CLI tool.
+This step is automatically executed by `install.sh`.
+```sh
+make
+```
+
+### Manual Compile
+
 ```sh
 gcc -o ft245-usb-relay -lftdi1 ft245-usb-relay.c
 ```
